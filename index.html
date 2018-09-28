@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Site Bookmarker</title>
+
+    <!-- Roboto font embed -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="fetchBookmarks()">
+    <div class="container">
+        <h3 class="logo">Bookmarker</h3>
+        <hr>
+        
+        <div class="banner">
+            <h2>Bookmark Your Favorite Sites</h2>
+
+            <form id="bookmarkForm">
+                <label for="siteName">Site Name</label>
+                <input type="text" id="siteName" placeholder="Website Name">
+    
+                <label for="siteUrl">Site URL</label>
+                <input type="text" id="siteUrl" placeholder="Webite URL">
+    
+                <button type="submit" class="btnBlue">Save</button>
+            </form>
+        </div>
+
+        <div id="bookmarksResults"></div>
+
+        <!-- <div class="bookmark">
+            <h3>Google</h3>
+            <a href="" class="btnVisit">Visit</a>
+            <a href="" class="btnDelete">Delete</a>
+        </div> -->
+
+        <footer>
+            <hr>
+            <p>&copy; 2018 Bookmarker, Inc.</p>
+        </footer>
+    </div>
+
+    <!-- javascripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
